@@ -31,7 +31,7 @@ latest_date = list(np.ravel(latest_date))[0]
 latest_date = dt.datetime.strptime(latest_date, '%Y-%m-%d')
 latest_year = int(dt.datetime.strftime(latest_date, '%Y'))
 latest_month = int(dt.datetime.strftime(latest_date, '%m'))
-latest_day = int(dt.datetime.strftime(latest_drate, '%d'))
+latest_day = int(dt.datetime.strftime(latest_date, '%d'))
 
 year_before = dt.date(latest_year, latest_month, latest_day) - dt.timedelta(days=365)
 year_before = dt.datetime.strftime(year_before, '%Y-%m-%d')
